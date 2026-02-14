@@ -19,7 +19,7 @@ HOG_BLOCK_NORM = "L2-Hys"
 
 CLASSES = ["cardboard", "glass", "metal", "paper", "plastic"]
 
-st.set_page_config(page_title="♻️ Clasificador Inteligente", layout="wide")
+st.set_page_config(page_title="♻️ Wally AI - Clasificador Inteligente", layout="wide")
 
 # ==============================
 # CARGAR MODELOS
@@ -38,7 +38,7 @@ model, scaler, pca = load_models()
 # INTERFAZ
 # ==============================
 
-st.title("♻️ Clasificador Inteligente de Residuos")
+st.title("♻️ Wally AI - Clasificador Inteligente de Residuos")
 st.markdown("### Aplicación en Tiempo Real - SVM + HOG + PCA")
 
 option = st.radio(
@@ -118,3 +118,4 @@ if image is not None:
 
 st.markdown("---")
 st.markdown("Proyecto T4 - Juan David M 🚀")
+
